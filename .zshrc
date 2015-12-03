@@ -35,7 +35,7 @@ DISABLE_AUTO_TITLE="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-plugins=(git)
+plugins=(git rbenv ruby gem brew)
 
 DISABLE_UPDATE_PROMPT=true # will auto update without prompt
 #DISABLE_AUTO_UPDATE="true" # will disable auto updates entirely
@@ -80,3 +80,7 @@ export PROTOBUF_HOME="/Users/sriharisriraman/work/stapleslabs/protobuf-2.5.0"
 
 # autojump
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
+
+# rbenv -------------------------------------------------------
+export PATH="$HOME/.rbenv/bin:$PATH"
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
